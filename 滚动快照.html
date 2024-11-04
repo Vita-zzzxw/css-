@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+    <style>
+      .wrapper {
+        width: 400px;
+        height: 200px;
+        border: 1px solid #ccc;
+        display: flex;
+        gap: 20px;
+        overflow-x: scroll;
+        /* 设置滚动方向 */
+        scroll-snap-type: x mandatory;
+      }
+      .box {
+        width: 400px;
+        height: 180px;
+        flex-shrink: 0;
+        background-color: aqua;
+        /* 滚动后的靠近方向 */
+        scroll-snap-align: start;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        width: 400px;
+        height: 200px;
+        border: 1px solid #ccc;
+        background-color: skyblue;
+        position: relative;
+      }
+      .inner {
+        width: 200px;
+        height: 100px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        /* 设置模糊度 */
+        backdrop-filter: blur(10px);
+        /* 设置透明度 */
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      backdrop-filter: blur(10px);
+      这行代码是关键，它使元素后面的任何内容都变得模糊。数值10px定义了模糊的程度，你可以根据需要调整这个值。
+      backdrop-filter: blur(10px);
+      这行代码是关键，它使元素后面的任何内容都变得模糊。数值10px定义了模糊的程度，你可以根据需要调整这个值。
+      <div class="inner"></div>
+    </div>
+  </body>
+</html>
